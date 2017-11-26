@@ -120,8 +120,10 @@ on enable-low-power
 
 service charger /charger
     class charger
-    group log
+    critical
+    group log system graphics
     seclabel u:r:healthd:s0
+    writepid /dev/cpuset/system-background/tasks
 
 service msm_irqbalance /system/bin/msm_irqbalance -f /system/vendor/etc/msm_irqbalance.conf
 
