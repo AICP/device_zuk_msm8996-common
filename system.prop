@@ -101,6 +101,9 @@ mm.enable.smoothstreaming=true
 vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 
+# Offline Charging
+ro.enable_boot_charger_mode=1
+
 # NITZ
 persist.rild.nitz_plmn=""
 persist.rild.nitz_long_ons_0=""
